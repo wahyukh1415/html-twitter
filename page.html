@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Twitter Page</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container{
+            width: 100%;
+            height: 100vh;
+        }
+        .flex{
+            display: flex;
+        }
+        .left-side{
+            background-color: #1D9BF0;
+            height: 100%;
+            width: 100%;
+            color: #FFFFFF;
+            text-align: center;
+        }
+        .right-side{
+            background-color: #FFFFFF;
+            height: 100%;
+            width: 100%;
+        }
+        .title{
+            margin: 147px 0px 5px 0px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 49px;
+        }
+        .subTitle{
+            margin: 5px 0px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+        }
+        .image-twitter{
+            width: 80%;
+            height: 60%;
+        }
+        .header-right-side{
+            justify-content: space-around;
+            margin-top: 69px;
+            padding: 0px 35px 0px 15px;
+        }
+        .text-link{
+            color: #1D9BF0;
+            cursor: pointer;
+        }
+        .sign-up{
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .login-text{
+            padding: 56px 140px 0px 120px;
+        }
+        .login-title{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 49px;
+            margin-bottom: 40px;
+        }
+        .username{
+            width: 92%;
+            height: 57px;
+
+            background: #EEEEEE;
+            border-radius: 4px;
+            border: none;
+            padding: 8px 19px;
+        }
+        .password{
+            width: 92%;
+            height: 57px;
+
+            background: #EEEEEE;
+            border-radius: 4px;
+            border: none;
+            padding: 8px 19px;
+            margin-top: 19px;
+        }
+        .forgot-password{
+            text-align: right;
+            /* margin-right: -40px; */
+        }
+        ::placeholder{
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 17px;
+        }
+        .sign-in-button{
+            align-items: center;
+            padding: 6px 19px;
+            width: 100%;
+            height: 60px;
+
+            background: #1D9BF0;
+            border-radius: 4px;
+            border: none;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .devided{
+            text-align: center;
+            margin: 30px 0px;
+        }
+        .login-button{
+            padding: 0px 140px 0px 120px;
+        }
+        .google-button{
+            width: 50%;
+            height: 46px;
+
+            background: #E7EAEE;
+            opacity: 0.8;
+            border-radius: 4px;
+            border: none;
+            margin-right: 5px;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: rgba(0, 0, 0, 0.75);
+            justify-content: center;
+            align-items: center;
+        }
+        .apple-button{
+            width: 50%;
+            height: 48px;
+
+            background: #191D23;
+            border-radius: 4px;
+            border: none;
+
+            font-family: 'Montserrat';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+            color: #FFFFFF;
+            justify-content: center;
+            align-items: center;
+        }
+        .img-google{
+            margin-right: 5px;
+        }
+        .img-apple{
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container flex">
+        <div class="left-side">
+            <h1 class="title">Welcome to Twitter</h1>
+            <h4 class="subTitle">Happening now, join twitter today </h4>
+            <img class="image-twitter" src="./Ilustrator.svg" alt="Ilustrator Image Twitter">
+            <p class="footage">© 2022 Twitter, Inc.</p>
+        </div>
+        <div class="right-side">
+            <div class="header-right-side flex">
+                <img src="./Twitter.svg" alt="Logo Twitter">
+                <p class="sign-up">Don’t have an account ? <span class="text-link">Sign Up</span> </p>
+            </div>
+            <div class="login-text">
+                <h1 class="login-title">Log in to Twitter</h1>
+                <p>Enter Twitter Account</p>
+                <input class="username" type="text" placeholder="Phone, email or username">
+                <input class="password" type="text" placeholder="Password">
+                <p class="forgot-password">Forgot password ?</p>
+                <button class="sign-in-button">Sign In</button>
+                <p class="devided">or</p>
+            </div>
+            <div class="login-button flex">
+                <button class="google-button flex">
+                    <img class="img-google" src="./Google Logo.svg" alt="logo Google">
+                    <p>
+                        Sign in with Google
+                    </p>
+                </button>
+                <button class="apple-button flex">
+                    <img class="img-apple" src="./Logo Apple.svg" alt="logo Apple">
+                    <p>
+                        Sign in with Apple
+                    </p>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
